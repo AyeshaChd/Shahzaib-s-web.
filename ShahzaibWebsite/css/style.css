@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+/* colors */
+
+/* css normalization */
+* {
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+/* body */
+body {
+  font-family: 'Roboto Flex', sans-serif;
+  /* overflow: hidden; */
+}
+/*================ utilities======================= */
+.purple-color {
+  color: #8a3f7f;
+}
+.bg-purple {
+  background-color: #8a3f7f;
+}
+.white-color {
+  color: #ffffff;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.black-color {
+  color: #000000;
+}
+.bg-darkgrey {
+  background-color: #333;
+}
+.bg-grey {
+  background-color: #cacaca;
+}
+/* font-size */
+.em1 {
+  font-size: 1em;
+}
+.em1half {
+  font-size: 1.5em;
+}
+.em2 {
+  font-size: 2em;
+}
+.em2half {
+  font-size: 2.5em;
+}
+.em3 {
+  font-size: 3em;
+}
+.rem1half {
+  font-size: 1.5rem;
+}
+.rem2 {
+  font-size: 2rem;
+}
+.rem2half {
+  font-size: 2.5rem;
+}
+.rem3 {
+  font-size: 3rem;
+}
+.px20 {
+  font-size: 20px;
+}
+.px25 {
+  font-size: 25px;
+}
+.px30 {
+  font-size: 30px;
+}
+.px40 {
+  font-size: 40px;
+}
+.px50 {
+  font-size: 50px;
+}
+.bold {
+  font-weight: bold;
+}
+.margin-top5 {
+  margin-top: 5px;
+}
+.margin-top10 {
+  margin-top: 10px;
+}
+.margin-top15 {
+  margin-top: 15px;
+}
+.margin-top20 {
+  margin-top: 20px;
+}
+.margin-top25 {
+  margin-top: 25px;
+}
+.margin-top30 {
+  margin-top: 30px;
+}
+.margin-top35 {
+  margin-top: 35px;
+}
+.margin-top40 {
+  margin-top: 40px;
+}
+.margin-top50 {
+  margin-top: 50px;
+}
+.margin-left50 {
+  margin-left: 50px;
+}
+.margin-right50 {
+  margin-right: 50px;
+}
+.x-padding10 {
+  padding: 0px 10px;
+}
+.x-padding20 {
+  padding: 0px 20px;
+}
+.x-padding30 {
+  padding: 0px 30px;
+}
+.x-padding40 {
+  padding: 0px 40px;
+}
+.x-padding50 {
+  padding: 0px 50px;
+}
+.x-padding100 {
+  padding: 0px 100px;
+}
+.margin-auto {
+  margin: auto;
+}
+
+/* spacing */
+.line-height {
+  line-height: 50px;
+}
+.space-in-letters1 {
+  letter-spacing: 1px;
+}
+.space-in-letters2half {
+  letter-spacing: 2px;
+}
+
+/* darkoverlay */
+.dark-overlay-point5 {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+/* text-center */
+.textcenter {
+  text-align: center;
+}
+/* display */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+}
+.justify-content {
+  justify-content: center;
+}
+.align-items {
+  align-items: center;
+}
+.spacebetween {
+  justify-content: space-between;
+}
+.spacearound {
+  justify-content: space-around;
+}
+
+/* ===================================================== */
+
+/* nav bar */
+
+#nav-bar {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #8a3f7f;
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.7);
+  margin-top: -30px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+}
+.name p {
+  margin-left: 100px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+p:first-letter {
+  font-size: 2.5em;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  right: 6vw;
+  margin-top: 20px;
+}
+a {
+  text-decoration: none;
+}
+ul li a {
+  padding: 5px 5px;
+}
+.input {
+  position: relative;
+  position: relative;
+  right: 8.5vw;
+  padding: 12px 17px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.btn {
+  position: relative;
+  right: 8vw;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 12px;
+  font-size: 15px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+/* image section */
+
+#landing-image {
+  background: url(../images/img1.jpg) no-repeat center center;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+  margin-top: -25px;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+.dark-overlay {
+  height: 100vh;
+  width: 100%;
+}
+
+.main-heading {
+  position: absolute;
+  margin-top: 30vh;
+  margin-left: 15vh;
+  font-size: 2.5em;
+  width: 50vw;
+  padding: 13px;
+}
+
+.lorem {
+  position: absolute;
+  margin-top: 41vh;
+  margin-left: 15vh;
+  font-weight: 50;
+  font-size: larger;
+  width: 59vw;
+  height: 15vh;
+  padding: 8px;
+  font-family: sans-serif;
+  line-height: 30px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.form {
+  position: absolute;
+  left: 940px;
+  bottom: 120px;
+  width: 20vw;
+  height: 53vh;
+  border-radius: 5px;
+  text-align: center;
+}
+.form h1 {
+  margin: 15px 0px 10px 0px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.form button {
+  display: block;
+  margin-left: 17px;
+  height: 6vh;
+  width: 17.5vw;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.form button:hover {
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+}
+
+.form input {
+  height: 6vh;
+  width: 17.5vw;
+  margin-top: 10px;
+  border: none;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 0px 10px;
+}
+.form span {
+  letter-spacing: 0.5px;
+}
+
+/* section what we do */
+#what-we-do {
+  height: 50vh;
+
+  margin: none;
+}
+.heading1 {
+  margin-bottom: 5px;
+}
+#what-we-do i {
+  font-size: 70px;
+}
+
+.dots {
+  margin-top: none;
+  margin-bottom: 40px;
+  padding: none;
+}
+.angular-development {
+  padding: 0px 20px;
+  margin-left: 120px;
+}
+
+.python-development {
+  padding: 0px 20px;
+  margin-right: 120px;
+}
+.lorem2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+}
+.lorem-fontfamily {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* section our clients */
+#our-clients {
+  height: 55vh;
+  background: url(../images/img2.png) no-repeat center center/cover;
+}
+.dark-overlay2 {
+  height: 55vh;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+#our-clients i {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+.client-items {
+  position: absolute;
+}
+.client-heading {
+  margin-top: 7vh;
+}
+
+.logo-2 {
+  margin-right: 10vw;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+.logo-1 {
+  margin-left: 10vw;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+/* section our clients */
+#recent-projects {
+  height: 67vh;
+  width: 100%;
+}
+.container {
+  height: 270px;
+  width: 250px;
+  background-color: lightslategrey;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+#recent-projects img {
+  height: 130px;
+  width: 210px;
+  border-radius: 5px;
+}
+.project-div-height {
+  height: 260px;
+  width: 250px;
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+}
+
+.lorem3 {
+  padding: 10px 0px 20px 0px;
+}
+.container1 {
+  margin-left: 100px;
+}
+.container4 {
+  margin-right: 100px;
+}
+
+/*  section footer */
+#footer {
+  height: 80px;
+  background-color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
